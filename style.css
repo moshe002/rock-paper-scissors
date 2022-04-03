@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.player1{
+    border-right: 1px solid black;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/bg1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.player2 {
+    border-left: 1px solid black;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/bg3.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#player2-title {
+    color: white;
+}
+
+.player1 .buttons-div, .player2 .buttons-div {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.player1 .buttons-div #rock1, .player2 .buttons-div #rock2 {
+    height: auto;
+    width: auto;
+    padding: 1rem;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.player1 .buttons-div #rock1:hover, .player2 .buttons-div #rock2:hover {
+    cursor: pointer;
+    transform: translateY(-15px);
+}
+
+.player1 .buttons-div #paper1, .player2 .buttons-div #paper2 {
+    height: auto;
+    width: auto;
+    padding: 1rem;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.player1 .buttons-div #paper1:hover, .player2 .buttons-div #paper2:hover {
+    cursor: pointer;
+    transform: translateY(-15px);
+}
+
+
+.player1 .buttons-div #scissors1, .player2 .buttons-div #scissors2 {
+    height: auto;
+    width: auto;
+    padding: 1rem;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.player1 .buttons-div #scissors1:hover, .player2 .buttons-div #scissors2:hover {
+    cursor: pointer;
+    transform: translateY(-15px);
+}
+
+.player1 .p1-pic-div, .player2 .p2-pic-div {
+    /* border: 1px solid black; */
+    margin-top: 5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#rockpic1, #rockpic2 {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 25px;
+    box-shadow: 1px 0px 20px -1px black;
+}
+
+#paperpic1, #paperpic2 {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 25px;
+    box-shadow: 1px 0px 20px -1px black;
+}
+
+#scissorpic1, #scissorpic2 {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 25px;
+    box-shadow: 1px 0px 20px -1px black;
+}
+
+.player1 .results-div, .player2 .results-div {
+    display: flex;
+    margin-top: 8rem;
+    padding: 2rem;
+    padding-left: 3rem;
+    /* border: 1px solid black; */
+}
+
+.player1 .results-div #results-btn {
+    height: auto;
+    width: auto;
+    padding: 1rem;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.player1 .results-div #results-btn:hover {
+    cursor: pointer;
+    transform: translateY(-15px);
+}
