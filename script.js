@@ -35,6 +35,7 @@ function clickRock2() {
     console.log(rock2)
     console.log('player 2 chose rock');
         document.getElementById('phrase2').innerHTML = 'Player 2 chose rock'
+        document.getElementById('results-btn').style.visibility = 'visible'
 }
 
 function clickPaper2() {
@@ -43,6 +44,7 @@ function clickPaper2() {
     console.log(paper2)
     console.log('player 2 chose paper');
         document.getElementById('phrase2').innerHTML = 'Player 2 chose paper'
+        document.getElementById('results-btn').style.visibility = 'visible'
 }
 
 function clickScissor2() {
@@ -51,6 +53,7 @@ function clickScissor2() {
     console.log(scissor2)
     console.log('player 2 chose scissors');
         document.getElementById('phrase2').innerHTML = 'Player 2 chose scissor'
+        document.getElementById('results-btn').style.visibility = 'visible'
 }
 
 function getResult() {

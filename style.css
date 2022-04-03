@@ -114,6 +114,7 @@ body {
 
 .player1 .results-div, .player2 .results-div {
     display: flex;
+    justify-content: center;
     margin-top: 8rem;
     padding: 2rem;
     padding-left: 3rem;
@@ -127,6 +128,7 @@ body {
     font-size: 18px;
     border-radius: 10px;
     transition: 0.2s;
+    visibility: hidden;
 }
 
 .player1 .results-div #results-btn:hover {
