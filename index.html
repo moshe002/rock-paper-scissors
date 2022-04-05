@@ -14,9 +14,9 @@
         <h1 id="player1-title">PLAYER 1</h1>
         <br><br><br>
         <div class="buttons-div">
-            <button id="rock1" onclick="clickRock1()">Rock</button>
-            <button id="paper1" onclick="clickPaper1()">Paper</button>
-            <button id="scissors1" onclick="clickScissor1()">Scissors</button>
+            <button id="rock1" onclick="clickRock1()" title="Rock">Rock</button>
+            <button id="paper1" onclick="clickPaper1()" title="Paper">Paper</button>
+            <button id="scissors1" onclick="clickScissor1()" title="Scissor">Scissor</button>
         </div>
         <div class="p1-pic-div">
             <img src="images/rock.jpg" alt="rock" style="display: none;" id="rockpic1">
@@ -25,7 +25,8 @@
         </div>
         <h2 id="phrase1"></h2>
         <div class="results-div">
-            <button id="results-btn" onclick="getResult()">Get results</button>
+            <button id="results-btn" onclick="getResult()" title="Results show">Show Winner</button>
+            <button id="reset-btn" title="Reset" onclick="reset()">Play again</button>
         </div>
     </div>
     <div class="player2">
@@ -33,18 +34,18 @@
         <h1 id="player2-title">PLAYER 2</h1>
         <br><br><br>
         <div class="buttons-div">
-            <button id="rock2" onclick="clickRock2()">Rock</button>
-            <button id="paper2" onclick="clickPaper2()">Paper</button>
-            <button id="scissors2" onclick="clickScissor2()">Scissors</button>
+            <button id="rock2" onclick="clickRock2()" title="Rock">Rock</button>
+            <button id="paper2" onclick="clickPaper2()" title="Paper">Paper</button>
+            <button id="scissors2" onclick="clickScissor2()" title="Scissor">Scissors</button>
         </div>
         <div class="p2-pic-div">
             <img src="images/rock.jpg" alt="rock" style="display: none;" id="rockpic2">
             <img src="images/paper.png" alt="paper" style="display: none;" id="paperpic2">
             <img src="images/scissors.jpg" alt="scissors" style="display: none;" id="scissorpic2">
         </div>
-        <h2 id="phrase2" style="color: white;"></h2>
+        <h2 id="phrase2"></h2>
         <div class="results-div">
-            <h2 id="result" style="color: white; font-size: 30px;"></h2>
+            <h2 id="result"></h2>
         </div>
     </div>
 </body>
