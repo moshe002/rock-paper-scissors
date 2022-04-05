@@ -57,6 +57,11 @@ body {
     transition: 0.2s;
 }
 
+.player2 .buttons-div #rock2 {
+    pointer-events: none;
+    opacity: 50%;
+}
+
 .player1 .buttons-div #rock1:hover, .player2 .buttons-div #rock2:hover {
     cursor: pointer;
     transform: translateY(-15px);
@@ -69,6 +74,11 @@ body {
     font-size: 18px;
     border-radius: 10px;
     transition: 0.2s;
+}
+
+.player2 .buttons-div #paper2 {
+    pointer-events: none;
+    opacity: 50%;
 }
 
 .player1 .buttons-div #paper1:hover, .player2 .buttons-div #paper2:hover {
@@ -84,6 +94,11 @@ body {
     font-size: 18px;
     border-radius: 10px;
     transition: 0.2s;
+}
+
+.player2 .buttons-div #scissors2 {
+    pointer-events: none;
+    opacity: 50%;
 }
 
 .player1 .buttons-div #scissors1:hover, .player2 .buttons-div #scissors2:hover {

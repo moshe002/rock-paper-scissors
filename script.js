@@ -11,6 +11,12 @@ function clickRock1() {
     // console.log(rock1)
     // console.log('player 1 chose rock');
         document.getElementById('phrase1').innerHTML = 'Player 1 chose ROCK'
+        document.getElementById('rock2').style.pointerEvents = 'auto';
+        document.getElementById('rock2').style.opacity = '100%';
+        document.getElementById('paper2').style.pointerEvents = 'auto';
+        document.getElementById('paper2').style.opacity = '100%';
+        document.getElementById('scissors2').style.pointerEvents = 'auto';
+        document.getElementById('scissors2').style.opacity = '100%';
 }
 
 function clickPaper1() {
@@ -19,6 +25,12 @@ function clickPaper1() {
     // console.log(paper1)
     // console.log('player 1 chose paper');
         document.getElementById('phrase1').innerHTML = 'Player 1 chose PAPER'
+        document.getElementById('rock2').style.pointerEvents = 'auto';
+        document.getElementById('rock2').style.opacity = '100%';
+        document.getElementById('paper2').style.pointerEvents = 'auto';
+        document.getElementById('paper2').style.opacity = '100%';
+        document.getElementById('scissors2').style.pointerEvents = 'auto';
+        document.getElementById('scissors2').style.opacity = '100%';
 }
 
 function clickScissor1() {
@@ -27,6 +39,12 @@ function clickScissor1() {
     // console.log(scissor1)
     // console.log('player 1 chose scissors');
         document.getElementById('phrase1').innerHTML = 'Player 1 chose SCISSOR'
+        document.getElementById('rock2').style.pointerEvents = 'auto';
+        document.getElementById('rock2').style.opacity = '100%';
+        document.getElementById('paper2').style.pointerEvents = 'auto';
+        document.getElementById('paper2').style.opacity = '100%';
+        document.getElementById('scissors2').style.pointerEvents = 'auto';
+        document.getElementById('scissors2').style.opacity = '100%';
 }
 
 function clickRock2() {
@@ -104,4 +122,11 @@ function reset() {
     document.getElementById('phrase2').innerHTML = ''
     document.getElementById('results-btn').style.display = 'none'
     document.getElementById('reset-btn').style.display = 'none'
+
+    document.getElementById('rock2').style.pointerEvents = 'none';
+    document.getElementById('rock2').style.opacity = '50%';
+    document.getElementById('paper2').style.pointerEvents = 'none';
+    document.getElementById('paper2').style.opacity = '50%';
+    document.getElementById('scissors2').style.pointerEvents = 'none';
+    document.getElementById('scissors2').style.opacity = '50%';
 }
