@@ -17,6 +17,8 @@ function clickRock1() {
         document.getElementById('paper2').style.opacity = '100%';
         document.getElementById('scissors2').style.pointerEvents = 'auto';
         document.getElementById('scissors2').style.opacity = '100%';
+        document.getElementById('paper1').style.visibility = 'hidden';
+        document.getElementById('scissors1').style.visibility = 'hidden';
 }
 
 function clickPaper1() {
@@ -31,6 +33,8 @@ function clickPaper1() {
         document.getElementById('paper2').style.opacity = '100%';
         document.getElementById('scissors2').style.pointerEvents = 'auto';
         document.getElementById('scissors2').style.opacity = '100%';
+        document.getElementById('rock1').style.visibility = 'hidden';
+        document.getElementById('scissors1').style.visibility = 'hidden';
 }
 
 function clickScissor1() {
@@ -45,6 +49,8 @@ function clickScissor1() {
         document.getElementById('paper2').style.opacity = '100%';
         document.getElementById('scissors2').style.pointerEvents = 'auto';
         document.getElementById('scissors2').style.opacity = '100%';
+        document.getElementById('paper1').style.visibility = 'hidden';
+        document.getElementById('rock1').style.visibility = 'hidden';
 }
 
 function clickRock2() {
@@ -55,6 +61,8 @@ function clickRock2() {
         document.getElementById('phrase2').innerHTML = 'Player 2 chose ROCK'
         document.getElementById('results-btn').style.display = 'block'
         //document.getElementById('reset-btn').style.display = 'block'
+        document.getElementById('paper2').style.visibility = 'hidden';
+        document.getElementById('scissors2').style.visibility = 'hidden';
 }
 
 function clickPaper2() {
@@ -65,6 +73,8 @@ function clickPaper2() {
         document.getElementById('phrase2').innerHTML = 'Player 2 chose PAPER'
         document.getElementById('results-btn').style.display = 'block'
         //document.getElementById('reset-btn').style.display = 'block'
+        document.getElementById('rock2').style.visibility = 'hidden';
+        document.getElementById('scissors2').style.visibility = 'hidden';
 }
 
 function clickScissor2() {
@@ -75,6 +85,8 @@ function clickScissor2() {
         document.getElementById('phrase2').innerHTML = 'Player 2 chose SCISSOR'
         document.getElementById('results-btn').style.display = 'block'
         //document.getElementById('reset-btn').style.display = 'block'
+        document.getElementById('paper2').style.visibility = 'hidden';
+        document.getElementById('rock2').style.visibility = 'hidden';
 }
 
 function getResult() {
@@ -129,4 +141,12 @@ function reset() {
     document.getElementById('paper2').style.opacity = '50%';
     document.getElementById('scissors2').style.pointerEvents = 'none';
     document.getElementById('scissors2').style.opacity = '50%';
+
+    document.getElementById('paper1').style.visibility = 'visible';
+    document.getElementById('scissors1').style.visibility = 'visible';
+    document.getElementById('rock1').style.visibility = 'visible';
+
+    document.getElementById('paper2').style.visibility = 'visible';
+    document.getElementById('rock2').style.visibility = 'visible';
+    document.getElementById('scissors2').style.visibility = 'visible';
 }
