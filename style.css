@@ -7,9 +7,12 @@
 body {
     display: flex;
     justify-content: center;
+    overflow-x: 'hidden';
+    overflow-y: 'hidden';
 }
 
 .player1{
+    display: block;
     border-right: 1px solid black;
     text-align: center;
     width: 100%;
@@ -24,6 +27,7 @@ body {
 }
 
 .player2 {
+    display: block;
     border-left: 1px solid black;
     text-align: center;
     width: 100%;
@@ -66,7 +70,7 @@ body {
 
 .player1 .buttons-div #rock1:hover, .player2 .buttons-div #rock2:hover {
     cursor: pointer;
-    transform: translateY(-15px);
+    transform: scale(1.2);
 }
 
 .player1 .buttons-div #paper1, .player2 .buttons-div #paper2 {
@@ -87,7 +91,7 @@ body {
 
 .player1 .buttons-div #paper1:hover, .player2 .buttons-div #paper2:hover {
     cursor: pointer;
-    transform: translateY(-15px);
+    transform: scale(1.2);
 }
 
 
@@ -109,7 +113,7 @@ body {
 
 .player1 .buttons-div #scissors1:hover, .player2 .buttons-div #scissors2:hover {
     cursor: pointer;
-    transform: translateY(-15px);
+    transform: scale(1.2);
 }
 
 .player1 .p1-pic-div, .player2 .p2-pic-div {
@@ -243,7 +247,7 @@ body {
 
 .player1 .results-div #results-btn:hover, .player1 .results-div #reset-btn:hover {
     cursor: pointer;
-    transform: translateY(-15px);
+    transform: scale(1.2);
 }
 
 #result {
@@ -278,6 +282,72 @@ body {
         -webkit-text-stroke: 0.10px black;
     }
     .player1 .p1-pic-div, .player2 .p2-pic-div {
+        margin-top: 2rem;
+    }
+} 
+
+@media only screen and (max-width: 600px) {
+    #player1-title, #player2-title {
+        font-size: 18px;
+    }
+
+    .buttons-div {
+       display: flex;
+       flex-direction: column; 
+       align-items: center;   
+    }
+    .player1 .buttons-div #rock1, .player2 .buttons-div #rock2 {
+        height: 4rem;
+        width: 4rem;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 10px;
+        transition: 0.2s;
+        display: block;
+    }
+    .player1 .buttons-div #paper1, .player2 .buttons-div #paper2 {
+        height: 4rem;
+        width: 4rem;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 10px;
+        transition: 0.2s;
+        display: block;
+    }
+    .player1 .buttons-div #scissors1, .player2 .buttons-div #scissors2 {
+        height: 4rem;
+        width: 4rem;
+        font-size: 12px;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.2s;
+        display: block;
+    }
+    .player1 #phrase1 {
+        font-size: 12px;
+        -webkit-text-stroke: 0.10px white;
+    }
+    .player2 #phrase2 {
+        font-size: 12px;
+        -webkit-text-stroke: 0.10px black;
+    }
+    .player1 .results-div #results-btn, .player1 .results-div #reset-btn {
+        height: 4rem;
+        width: 4rem;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 10px;
+        transition: 0.2s;
+        /* visibility: hidden; */
+        display: none;
+    }
+    #result {
+        color: white; 
+        font-size: 25px; 
+        font-weight: normal; 
+        -webkit-text-stroke: 0;
+    }
+    .player1 .results-div, .player2 .results-div {
         margin-top: 2rem;
     }
 }

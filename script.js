@@ -1,16 +1,16 @@
 let rock1 = false;
-let rock2 = false;
 let paper1 = false;
-let paper2 = false;
 let scissor1 = false;
+let rock2 = false;
+let paper2 = false;
 let scissor2 = false;
 
 function clickRock1() {
     document.getElementById('rockpic1').style.display = 'block';
     rock1 = true;
-    // console.log(rock1)
-    // console.log('player 1 chose rock');
-        document.getElementById('phrase1').innerHTML = 'Player 1 chose ROCK'
+    console.log(rock1);
+    console.log('player 1 chose rock');
+        document.getElementById('phrase1').innerHTML = 'Player 1 chose ROCK';
         document.getElementById('rock2').style.pointerEvents = 'auto';
         document.getElementById('rock2').style.opacity = '100%';
         document.getElementById('paper2').style.pointerEvents = 'auto';
@@ -24,9 +24,9 @@ function clickRock1() {
 function clickPaper1() {
     document.getElementById('paperpic1').style.display = 'block';
     paper1 = true;
-    // console.log(paper1)
-    // console.log('player 1 chose paper');
-        document.getElementById('phrase1').innerHTML = 'Player 1 chose PAPER'
+    console.log(paper1);
+    console.log('player 1 chose paper');
+        document.getElementById('phrase1').innerHTML = 'Player 1 chose PAPER';
         document.getElementById('rock2').style.pointerEvents = 'auto';
         document.getElementById('rock2').style.opacity = '100%';
         document.getElementById('paper2').style.pointerEvents = 'auto';
@@ -40,9 +40,9 @@ function clickPaper1() {
 function clickScissor1() {
     document.getElementById('scissorpic1').style.display = 'block';
     scissor1 = true;
-    // console.log(scissor1)
-    // console.log('player 1 chose scissors');
-        document.getElementById('phrase1').innerHTML = 'Player 1 chose SCISSOR'
+    console.log(scissor1);
+    console.log('player 1 chose scissors');
+        document.getElementById('phrase1').innerHTML = 'Player 1 chose SCISSOR';
         document.getElementById('rock2').style.pointerEvents = 'auto';
         document.getElementById('rock2').style.opacity = '100%';
         document.getElementById('paper2').style.pointerEvents = 'auto';
@@ -56,9 +56,9 @@ function clickScissor1() {
 function clickRock2() {
     document.getElementById('rockpic2').style.display = 'block';
     rock2 = true;
-    // console.log(rock2)
-    // console.log('player 2 chose rock');
-        document.getElementById('phrase2').innerHTML = 'Player 2 chose ROCK'
+    console.log(rock2);
+    console.log('player 2 chose rock');
+        document.getElementById('phrase2').innerHTML = 'Player 2 chose ROCK';
         document.getElementById('results-btn').style.display = 'block'
         //document.getElementById('reset-btn').style.display = 'block'
         document.getElementById('paper2').style.display = 'none';
@@ -68,10 +68,10 @@ function clickRock2() {
 function clickPaper2() {
     document.getElementById('paperpic2').style.display = 'block';
     paper2 = true;
-    // console.log(paper2)
-    // console.log('player 2 chose paper');
-        document.getElementById('phrase2').innerHTML = 'Player 2 chose PAPER'
-        document.getElementById('results-btn').style.display = 'block'
+    console.log(paper2);
+    console.log('player 2 chose paper');
+        document.getElementById('phrase2').innerHTML = 'Player 2 chose PAPER';
+        document.getElementById('results-btn').style.display = 'block';
         //document.getElementById('reset-btn').style.display = 'block'
         document.getElementById('rock2').style.display = 'none';
         document.getElementById('scissors2').style.display = 'none';
@@ -80,44 +80,44 @@ function clickPaper2() {
 function clickScissor2() {
     document.getElementById('scissorpic2').style.display = 'block';
     scissor2 = true;
-    // console.log(scissor2)
-    // console.log('player 2 chose scissors');
-        document.getElementById('phrase2').innerHTML = 'Player 2 chose SCISSOR'
-        document.getElementById('results-btn').style.display = 'block'
+    console.log(scissor2);
+    console.log('player 2 chose scissors');
+        document.getElementById('phrase2').innerHTML = 'Player 2 chose SCISSOR';
+        document.getElementById('results-btn').style.display = 'block';
         //document.getElementById('reset-btn').style.display = 'block'
         document.getElementById('paper2').style.display = 'none';
         document.getElementById('rock2').style.display = 'none';
 }
 
 function getResult() {
+    if(rock1 === true && rock2 === true){
+        document.getElementById('result').innerHTML = 'Its a tie!';
+    }
+    if(rock1 === true && scissor2 === true){
+        document.getElementById('result').innerHTML = 'Player 1 wins!';
+    }
     if(rock1 === true && paper2 === true){
         document.getElementById('result').innerHTML = 'Player 2 wins!';
     }
-    else if(rock1 === true && scissor2 === true) {
+    if(paper1 == true && rock2 == true){
         document.getElementById('result').innerHTML = 'Player 1 wins!';
     }
-    else if(rock1 === true && rock1 === true) {
-        document.getElementById('result').innerHTML = "It's a tie!";
-    }
-    else if(paper1 === true && rock2 === true){
-        document.getElementById('result').innerHTML = 'Player 1 wins!';
-    }
-    else if(paper1 === true && scissor2 === true){
+    if(paper1 === true && scissor2 === true){
         document.getElementById('result').innerHTML = 'Player 2 wins!';
     }
-    else if(paper1 === true && paper2 === true){
-        document.getElementById('result').innerHTML = "It's a tie!";
+    if(paper1 === true && paper2 === true){
+        document.getElementById('result').innerHTML = 'Its a tie!';
     }
-    else if(scissor1 === true && rock2 === true){
+    if(scissor1 === true && rock2 === true){
         document.getElementById('result').innerHTML = 'Player 2 wins!';
     }
-    else if(scissor1 === true && paper2 === true){
+    if(scissor1 === true && paper2 === true){
         document.getElementById('result').innerHTML = 'Player 1 wins!';
     }
-    else if(scissor1 === true && scissor1 === true){
-        document.getElementById('result').innerHTML = "It's a tie!";
+    if(scissor1 === true && scissor2 === true){
+        document.getElementById('result').innerHTML = 'Its a tie!';
     }
-
+    
     document.getElementById('reset-btn').style.display = 'block'
     document.getElementById('results-btn').style.display = 'none'
 }
@@ -149,4 +149,7 @@ function reset() {
     document.getElementById('paper2').style.display = 'block';
     document.getElementById('rock2').style.display = 'block';
     document.getElementById('scissors2').style.display = 'block';
+
+    console.clear();
+    window.location.reload();
 }
