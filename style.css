@@ -55,11 +55,13 @@ body {
     font-size: 18px;
     border-radius: 10px;
     transition: 0.2s;
+    visibility: visible;
 }
 
 .player2 .buttons-div #rock2 {
     pointer-events: none;
     opacity: 50%;
+    visibility: visible;
 }
 
 .player1 .buttons-div #rock1:hover, .player2 .buttons-div #rock2:hover {
@@ -74,11 +76,13 @@ body {
     font-size: 18px;
     border-radius: 10px;
     transition: 0.2s;
+    visibility: visible;
 }
 
 .player2 .buttons-div #paper2 {
     pointer-events: none;
     opacity: 50%;
+    visibility: visible;
 }
 
 .player1 .buttons-div #paper1:hover, .player2 .buttons-div #paper2:hover {
@@ -94,11 +98,13 @@ body {
     font-size: 18px;
     border-radius: 10px;
     transition: 0.2s;
+    visibility: visible;
 }
 
 .player2 .buttons-div #scissors2 {
     pointer-events: none;
     opacity: 50%;
+    visibility: visible;
 }
 
 .player1 .buttons-div #scissors1:hover, .player2 .buttons-div #scissors2:hover {
