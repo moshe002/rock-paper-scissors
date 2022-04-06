@@ -298,8 +298,9 @@ body {
     }
     .player1 .buttons-div #rock1, .player2 .buttons-div #rock2 {
         height: 4rem;
-        width: 4rem;
+        width: 4.5rem;
         font-size: 12px;
+        padding: 10px;
         text-align: center;
         border-radius: 10px;
         transition: 0.2s;
@@ -307,8 +308,9 @@ body {
     }
     .player1 .buttons-div #paper1, .player2 .buttons-div #paper2 {
         height: 4rem;
-        width: 4rem;
+        width: 4.5rem;
         font-size: 12px;
+        padding: 10px;
         text-align: center;
         border-radius: 10px;
         transition: 0.2s;
@@ -316,7 +318,7 @@ body {
     }
     .player1 .buttons-div #scissors1, .player2 .buttons-div #scissors2 {
         height: 4rem;
-        width: 4rem;
+        width: 4.5rem;
         font-size: 12px;
         padding: 10px;
         border-radius: 10px;
@@ -335,7 +337,7 @@ body {
         height: 4rem;
         width: 4rem;
         padding: 10px;
-        font-size: 14px;
+        font-size: 12px;
         border-radius: 10px;
         transition: 0.2s;
         /* visibility: hidden; */
